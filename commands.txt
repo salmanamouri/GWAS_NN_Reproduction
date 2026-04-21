@@ -1,0 +1,70 @@
+### Run step 6:
+python -m repro.scripts.run_perm_benchmark
+
+What output to expect
+
+Inside:
+
+repro/outputs/perm_benchmark/
+
+should get:
+
+perm_benchmark_results.json
+
+
+How to interpret the result
+Best-case qualitative pattern
+
+Even with the scaffold score, you want something like:
+
+Perm I: better TNR / specificity
+Perm T: worse specificity
+Perm R: worse specificity
+
+That matches the paper’s central claim: Perm I gives a more appropriate null for NN interaction testing.
+Because we are still using:
+
+linear main-effect model
+proxy interaction scores
+
+you should not expect exact paper numbers yet.
+
+
+
+### step 7
+python -m repro.scripts.plot_fig2
+What output you should get
+
+Inside:
+
+repro/outputs/fig2/
+
+you should see:
+
+fig2_permutation_comparison.png
+fig2_summary.txt
+
+What this figure means
+
+You should see:
+
+all methods have similar TPR
+Perm I has the best TNR
+Perm T and Perm R are slightly worse
+
+That means:
+
+all three methods can detect many real interactions
+but Perm I is better at avoiding false positives
+
+
+
+### Run step 8:
+python -m repro.scripts.run_baseline_smoke_test
+
+### run step 9
+python -m repro.scripts.run_figure3_benchmark
+
+
+### Run step 11 - shapley score
+python -m repro.scripts.run_nn_interactions
