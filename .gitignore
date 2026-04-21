@@ -16,6 +16,6 @@ venv/
 Thumbs.db
 
 # Generated outputs
-repro/outputs/
+# repro/outputs/
 InteractionScore/
 PermutationDistribution/
