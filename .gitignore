@@ -19,3 +19,16 @@ Thumbs.db
 # repro/outputs/
 InteractionScore/
 PermutationDistribution/
+
+# Outputs
+repro/outputs/
+
+# Datasets
+data/
+
+# Models
+*.pth
+*.pt
+
+# Jupyter
+.ipynb_checkpoints/
