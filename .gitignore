@@ -20,8 +20,6 @@ Thumbs.db
 InteractionScore/
 PermutationDistribution/
 
-# Outputs
-repro/outputs/
 
 # Datasets
 data/

@@ -1,0 +1,51 @@
+{
+  "topsnp_lr": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.3974358974358974,
+      "ap": 0.14025943568626495
+    }
+  },
+  "topsnp_lasso": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.405982905982906,
+      "ap": 0.13753712237583204
+    }
+  },
+  "topsnp_xgb": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.6025641025641025,
+      "ap": 0.20155119007495143
+    }
+  },
+  "pca_lr": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.5683760683760684,
+      "ap": 0.23916503173469117
+    }
+  },
+  "pca_lasso": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.3888888888888889,
+      "ap": 0.19423076923076926
+    }
+  },
+  "pca_xgb": {
+    "type": "baseline",
+    "metrics": {
+      "auroc": 0.4700854700854701,
+      "ap": 0.1701604514484839
+    }
+  },
+  "nn_shapley": {
+    "type": "neural",
+    "metrics": {
+      "auroc": 0.5982905982905984,
+      "ap": 0.22241212803712804
+    }
+  }
+}
